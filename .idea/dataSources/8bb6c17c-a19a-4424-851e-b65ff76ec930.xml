@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataSource name="atguigu@localhost">
+  <database-model serializer="dbm" rdbms="MYSQL" format-version="4.4">
+    <root id="1"/>
+    <schema id="2" parent="1" name="atguigu">
+      <Current>1</Current>
+      <Visible>1</Visible>
+    </schema>
+    <schema id="3" parent="1" name="information_schema"/>
+    <schema id="4" parent="1" name="jpa"/>
+    <schema id="5" parent="1" name="mysql"/>
+    <schema id="6" parent="1" name="o2o"/>
+    <schema id="7" parent="1" name="performance_schema"/>
+    <schema id="8" parent="1" name="spring_cache"/>
+    <schema id="9" parent="1" name="test"/>
+    <table id="10" parent="2" name="customers"/>
+    <table id="11" parent="2" name="examstudent"/>
+    <column id="12" parent="10" name="ID">
+      <Position>1</Position>
+      <DataType>int(6)|0</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="13" parent="10" name="NAME">
+      <Position>2</Position>
+      <DataType>varchar(25)|0</DataType>
+    </column>
+    <column id="14" parent="10" name="EMAIL">
+      <Position>3</Position>
+      <DataType>varchar(25)|0</DataType>
+    </column>
+    <column id="15" parent="10" name="BIRTH">
+      <Position>4</Position>
+      <DataType>date|0</DataType>
+    </column>
+    <key id="16" parent="10" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>ID</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="17" parent="11" name="FlowID">
+      <Position>1</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="18" parent="11" name="Type">
+      <Position>2</Position>
+      <Comment>四级/六级</Comment>
+      <DataType>int(11)|0</DataType>
+    </column>
+    <column id="19" parent="11" name="IDcard">
+      <Position>3</Position>
+      <DataType>varchar(18)|0</DataType>
+    </column>
+    <column id="20" parent="11" name="ExamCard">
+      <Position>4</Position>
+      <DataType>varchar(15)|0</DataType>
+    </column>
+    <column id="21" parent="11" name="StrudentName">
+      <Position>5</Position>
+      <DataType>varchar(20)|0</DataType>
+    </column>
+    <column id="22" parent="11" name="Location">
+      <Position>6</Position>
+      <DataType>varchar(20)|0</DataType>
+    </column>
+    <column id="23" parent="11" name="Grade">
+      <Position>7</Position>
+      <DataType>int(11)|0</DataType>
+    </column>
+    <key id="24" parent="11" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>FlowID</ColNames>
+      <Primary>1</Primary>
+    </key>
+  </database-model>
+</dataSource>
